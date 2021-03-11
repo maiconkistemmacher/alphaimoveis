@@ -1,87 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <title>Alpha imóveis - Imobiliária Web </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900|Playfair+Display:400,700,900 " rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/style.css">
-
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-  <div class="site-wrap">
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-
-
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-
-      <div class="container">
-        <div class="row align-items-center">
-
-          <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo m-0 p-0"><a href="" class="mb-0">AlphaImóveis</a></h1>
-          </div>
-
-          <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#imoveis" class="nav-link">Imóveis</a></li>
-                <li><a href="#investimentos" class="nav-link">Investimentos</a></li>
-                <li><a href="#contato" class="nav-link">Contato</a></li>
-              </ul>
-            </nav>
-          </div>
-
-
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div>
-
-        </div>
-      </div>
-
-    </header>
-
-
-
-    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_1.jpg);" data-aos="fade" id="home">
-
-
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-6 mt-lg-5 text-center">
-            <h1>Mais de 2.000 imóveis em Alphaville</h1>
-            <p class="mb-5"></p>
-
-          </div>
-        </div>
-      </div>
-
-      <a href="#howitworks-section" class="smoothscroll arrow-down"><span class="icon-arrow_downward"></span></a>
-    </div>
-
-
-    <div class="py-5 bg-light site-section how-it-works" id="howitworks-section">
+<main>
+<div class="py-5 bg-light site-section how-it-works" id="howitworks-section">
       <div class="container">
         <div class="row mb-5 justify-content-center">
 
@@ -138,6 +56,7 @@
               <div class="mb-2 d-flex justify-content-between">
                 <span class="w border-r">6 Quartos</span>
                 <span class="w border-r">4 Banheiros</span>
+                <span class="w">430 m2</span>
                 </div>
               <div>Residencial Nove - Alphaville</div>
             </div>
@@ -152,6 +71,7 @@
               <div class="mb-2 d-flex justify-content-between">
                 <span class="w border-r">8 Quartos</span>
                 <span class="w border-r">4 Banheiros</span>
+                <span class="w">530 m2</span>
               </div>
               <div>Residencial Dois - Tamobore</div>
             </div>
@@ -164,8 +84,9 @@
             <div class="prop-details p-3">
               <div><strong class="price">R$4.700,000</strong></div>
               <div class="mb-2 d-flex justify-content-between">
-                <span class="w border-r">6 Quartos</span>
+                <span class="w border-r">6 Quartos</span> 
                 <span class="w border-r">4 Banheiros</span>
+                <span class="w">450 m2</span>
                 </div>
               <div>Residencial Doze - Alphaville</div>
             </div>
@@ -180,7 +101,8 @@
               <div class="mb-2 d-flex justify-content-between">
                 <span class="w border-r">5 Quartos</span>
                 <span class="w border-r">3 Banheiros</span>
-                    </div>
+                <span class="w">480 m2</span>
+              </div>
               <div>Residencial Três - Tambore</div>
             </div>
           </div>
@@ -188,7 +110,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4">
-            <a href="lista.html" class="btn btn-primary btn-block">Veja mais</a>
+            <a href="lista.php#imoveis" class="btn btn-primary btn-block">Veja mais</a>
           </div>
         </div>
       </div>
@@ -231,39 +153,38 @@
         </div>
         <div class="row">
           <div class="col-md-7 mb-5">
-            <form action="#" class="p-5 bg-white">
+          
+            <form method="post" class="p-5 bg-white">
+              
               <div class="row form-group">
-
                 <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">Nome</label>
-                  <input type="text" id="fname" class="form-control">
+                  <label class="text-black" for="nome">Nome</label>
+                  <input name="nome" type="text" id="nome" class="form-control">
                 </div>
                 <div class="col-md-6">
-                  <label class="text-black" for="lname">Sobrenome</label>
-                  <input type="text" id="lname" class="form-control">
+                  <label class="text-black" for="sobrenome">Sobrenome</label>
+                  <input name="sobrenome" type="text" id="sobrenome" class="form-control">
                 </div>
               </div>
 
               <div class="row form-group">
-
                 <div class="col-md-12">
                   <label class="text-black" for="email">Email</label>
-                  <input type="email" id="email" class="form-control">
+                  <input name="email" type="email" id="email" class="form-control">
                 </div>
               </div>
 
               <div class="row form-group">
-
                 <div class="col-md-12">
                   <label class="text-black" for="subject">Assunto</label>
-                  <input type="subject" id="subject" class="form-control">
+                  <input name="assunto" type="subject" id="subject" class="form-control">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="text-black" for="message">Mensagem</label>
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Escreva suas dúvidas ou perguntas aqui..."></textarea>
+                  <textarea name="mensagem" id="message" cols="30" rows="7" class="form-control" placeholder="Escreva suas dúvidas ou perguntas aqui..."></textarea>
                 </div>
               </div>
 
@@ -294,53 +215,4 @@
         </div>
       </div>
     </section>
-
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="row">
-              <div class="col-md-5">
-              Projeto desenvolvido por <a href="https://www.linkedin.com/in/maiconkistemmacher/">Maicon</a>, como teste/desafio para vaga de Programador PHP na Alphacode.
-              <div class="col-md-3 ml-auto">
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="mb-4">
-            <form action="#" method="post" class="footer-subscribe">
-              <div class="input-group mb-3">
-                </div>
-              </div>
-            </form>
-            </div>
-            <div class="">
-              <h2 class="footer-heading mb-4">Siga-nos:</h2>
-                <a href="https://www.facebook.com/alphacodeBR/" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                <a href="https://twitter.com/alphacodeBR" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                <a href="https://www.instagram.com/alphacodebr/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                <a href="https://www.linkedin.com/company/rfti-solu-es-para-internet/" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-            </div>
-          </div>
-        </div>
-
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-
-
-  <script src="js/main.js"></script>
-
-  </body>
-</html>
+    </main>

@@ -1,0 +1,8 @@
+{
+    "name":"dev/alphaimoveis",
+    "autoload":{
+        "psr-4":{
+            "App\\":"app/"
+        }
+    }
+}
