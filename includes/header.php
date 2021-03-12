@@ -48,7 +48,7 @@
                 <li><a href="lista.php#imoveis" class="nav-link">Imóveis</a></li>
                 <li><a href="index.php#investimentos" class="nav-link">Investimentos</a></li>
                 <li><a href="index.php#contato" class="nav-link">Contato</a></li>
-                <li class="nav-item"><a class="btn btn-outline-primary" href="#" role="button">Entrar</a>
+                <li class="nav-item"><a class="btn btn-outline-primary" href="login.php" role="button">Entrar</a>
               </ul>
             </nav>
           </div>

@@ -4,6 +4,26 @@ namespace App\Db;
 
 use \PDO;
 
+
+    /**
+    * Sessão responsável pelo Login da área restrita 
+    */
+                $servidor = "localhost";
+                $usuario = "root";
+                $senha = "root";
+                $dbname = "database";
+                
+                //Criar a conexao
+                $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
+                
+                if(!$conn){
+                	die("Falha na conexao: " . mysqli_connect_error());
+                }else{
+                	//echo "Conexao realizada com sucesso";                    
+                    }
+                
+
+
 class Database{
 
     /**
@@ -127,5 +147,10 @@ class Database{
 
         //EXECUTA A QUERY
         return $this->execute($query);
-    }
+
+
+
+               
+       
+    } 
 }
