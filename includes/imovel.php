@@ -9,12 +9,12 @@
         </div>
       </div>
 
-      <a href="#property-details" class="smoothscroll arrow-down"><span class="icon-arrow_downward"></span></a>
+      <a href="#imovel" class="smoothscroll arrow-down"><span class="icon-arrow_downward"></span></a>
     </div>  
 
     
     
-    <div class="site-section" id="property-details">
+    <div class="site-section" id="imovel">
       <div class="container">
         <div class="row">
           <div class="col-lg-7">

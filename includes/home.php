@@ -71,9 +71,9 @@
               <div class="mb-2 d-flex justify-content-between">
                 <span class="w border-r">8 Quartos</span>
                 <span class="w border-r">4 Banheiros</span>
-                <span class="w">530 m2</span>
+                <span class="w">450 m2</span>
               </div>
-              <div>Residencial Dois - Tamobore</div>
+              <div>Residencial Dois - Tamoboré</div>
             </div>
           </div>
 
@@ -86,7 +86,7 @@
               <div class="mb-2 d-flex justify-content-between">
                 <span class="w border-r">6 Quartos</span> 
                 <span class="w border-r">4 Banheiros</span>
-                <span class="w">450 m2</span>
+                <span class="w">530 m2</span>
                 </div>
               <div>Residencial Doze - Alphaville</div>
             </div>
@@ -103,7 +103,7 @@
                 <span class="w border-r">3 Banheiros</span>
                 <span class="w">480 m2</span>
               </div>
-              <div>Residencial Três - Tambore</div>
+              <div>Residencial Três - Tamboré</div>
             </div>
           </div>
 
@@ -130,14 +130,17 @@
           </div>
           <div class="col-lg-5 ml-auto">
             <h2 class="section-title mb-3">As melhores oportunidades estão aqui</h2>
-                <p class="lead"></p>
+                <p class="lead"></p><br>
                 <p>Agora na AlphaImóveis, além de continuar descomplicando sua vida quando o assunto é comprar ou alugar imóveis, também ofereçemos uma série de fundos de investimentos imobiliários para você investir no seu futuro.</p>
-                <ul class="list-unstyled ul-check success">
+                <ul class="list-unstyled ul-check success"><br>
                   <li>Fundos de investimentos em imóveis de alto padrão</li>
                   <li>Imóveis em condomínio</li>
                   <li>Imóveis na planta</li>
-                  <li>Segurança e rentabilidade</li>
-                </ul>
+                  <li>Segurança e rentabilidade</li>                  
+                </ul>   
+                <div class="col-md-6">
+                  <a href="index.php#contato" class="btn btn-primary btn-block">Entre em contato</a>
+                </div>             
           </div>
         </div>
       </div>
@@ -184,7 +187,7 @@
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="text-black" for="message">Mensagem</label>
-                  <textarea name="mensagem" id="message" cols="30" rows="7" class="form-control" placeholder="Escreva suas dúvidas ou perguntas aqui..."></textarea>
+                  <textarea name="mensagem" id="message" cols="30" rows="7" class="form-control" placeholder="Escreva aqui..."></textarea>
                 </div>
               </div>
 
