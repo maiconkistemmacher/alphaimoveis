@@ -46,11 +46,11 @@
           <div class="col-md-9 order-2 order-md-1">
             <div class="property horizontal d-flex">
               <div class="mr-3 img-entry">
-                <a href="imovel.php#imovel"><img src="images/property_1-sm.jpg" alt="Image" class="img-fluid"></a>
+                <a href="imovel.php"><img src="images/property_1-sm.jpg" alt="Image" class="img-fluid"></a>
               </div>
                             
               <div class="prop-details p-3">
-                <div><a href="imovel.php#imovel"><strong class="price">R$3.400,000</strong></a></div>
+                <div><a href="imovel.php"><strong class="price">R$3.400,000</strong></a></div>
                 <div class="mb-2 d-flex justify-content-between">
                 <p><span>6 Quartos</span>,
                   <span>4 Banheiros</span>,
@@ -62,10 +62,10 @@
 
             <div class="property horizontal d-flex">
               <div class="mr-3 img-entry">
-                <a href="imovel.php#imovel"><img src="images/property_2-sm.jpg" alt="Image" class="img-fluid"></a>
+                <a href="imovel.php"><img src="images/property_2-sm.jpg" alt="Image" class="img-fluid"></a>
               </div>
               <div class="prop-details p-3">
-                <div><a href="imovel.php#imovel"><strong class="price">R$3.800,000</strong></a></div>
+                <div><a href="imovel.php"><strong class="price">R$3.800,000</strong></a></div>
                 <div class="mb-2 d-flex justify-content-between">
                 <p><span>6 Quartos</span>, 
                   <span>3 Banheiros</span>,
@@ -77,10 +77,10 @@
 
             <div class="property horizontal d-flex">
               <div class="mr-3 img-entry">
-                <a href="imovel.php#imovel"><img src="images/property_3-sm.jpg" alt="Image" class="img-fluid"></a>
+                <a href="imovel.php"><img src="images/property_3-sm.jpg" alt="Image" class="img-fluid"></a>
               </div>
               <div class="prop-details p-3">
-                <div><a href="imovel.php#imovel"><strong class="price">R$4.500,000</strong></a></div>
+                <div><a href="imovel.php"><strong class="price">R$4.500,000</strong></a></div>
                 <div class="mb-2 d-flex justify-content-between">
                 <p><span>7 Quartos</span>, 
                   <span>4 Banheiros</span>,
@@ -92,10 +92,10 @@
 
             <div class="property horizontal d-flex">
               <div class="mr-3 img-entry">
-                <a href="imovel.php#imovel"><img src="images/property_4-sm.jpg" alt="Image" class="img-fluid"></a>
+                <a href="imovel.php"><img src="images/property_4-sm.jpg" alt="Image" class="img-fluid"></a>
               </div>
               <div class="prop-details p-3">
-                <div><a href="imovel.php#imovel"><strong class="price">R$3.900,000</strong></a></div>
+                <div><a href="imovel.php"><strong class="price">R$3.900,000</strong></a></div>
                 <div class="mb-2 d-flex justify-content-between">
                 <p><span>4 Quartos</span>, 
                   <span>3 Banheiros</span>,
@@ -107,10 +107,10 @@
 
             <div class="property horizontal d-flex">
               <div class="mr-3 img-entry">
-                <a href="imovel.php#imovel"><img src="images/property_5-sm.jpg" alt="Image" class="img-fluid"></a>
+                <a href="imovel.php"><img src="images/property_5-sm.jpg" alt="Image" class="img-fluid"></a>
               </div>
               <div class="prop-details p-3">
-                <div><a href="imovel.php#imovel"><strong class="price">R$4.300,000</strong></a></div>
+                <div><a href="imovel.php"><strong class="price">R$4.300,000</strong></a></div>
                 <div class="mb-2 d-flex justify-content-between">
                 <p><span>8 Quartos</span>, 
                   <span>5 Banheiros</span>,
@@ -122,10 +122,10 @@
 
             <div class="property horizontal d-flex">
               <div class="mr-3 img-entry">
-                <a href="imovel.php#imovel"><img src="images/property_1-sm.jpg" alt="Image" class="img-fluid"></a>
+                <a href="imovel.php"><img src="images/property_1-sm.jpg" alt="Image" class="img-fluid"></a>
               </div>
               <div class="prop-details p-3">
-                <div><a href="imovel.php#imovel"><strong class="price">R$3.400,000</strong></a></div>
+                <div><a href="imovel.php"><strong class="price">R$3.400,000</strong></a></div>
                 <div class="mb-2 d-flex justify-content-between">
                 <p><span>6 Quartos</span>, 
                   <span>4 Banheiros</span>,
@@ -137,10 +137,10 @@
 
             <div class="property horizontal d-flex">
               <div class="mr-3 img-entry">
-                <a href="imovel.php#imovel"><img src="images/property_2-sm.jpg" alt="Image" class="img-fluid"></a>
+                <a href="imovel.php"><img src="images/property_2-sm.jpg" alt="Image" class="img-fluid"></a>
               </div>
               <div class="prop-details p-3">
-                <div><a href="imovel.php#imovel"><strong class="price">R$3.700,000</strong></a></div>
+                <div><a href="imovel.php"><strong class="price">R$3.700,000</strong></a></div>
                 <div class="mb-2 d-flex justify-content-between">
                 <p><span>7 Quartos</span>, 
                   <span>5 Banheiros</span>,
@@ -152,10 +152,10 @@
 
             <div class="property horizontal d-flex">
               <div class="mr-3 img-entry">
-                <a href="imovel.php#imovel"><img src="images/property_3-sm.jpg" alt="Image" class="img-fluid"></a>
+                <a href="imovel.php"><img src="images/property_3-sm.jpg" alt="Image" class="img-fluid"></a>
               </div>
               <div class="prop-details p-3">
-                <div><a href="imovel.php#imovel"><strong class="price">R$3.900,000</strong></a></div>
+                <div><a href="imovel.php"><strong class="price">R$3.900,000</strong></a></div>
                 <div class="mb-2 d-flex justify-content-between">
                 <p><span>5 Quartos</span>, 
                   <span>3 Banheiros</span>,
@@ -167,10 +167,10 @@
 
             <div class="property horizontal d-flex">
               <div class="mr-3 img-entry">
-                <a href="imovel.php#imovel"><img src="images/property_4-sm.jpg" alt="Image" class="img-fluid"></a>
+                <a href="imovel.php"><img src="images/property_4-sm.jpg" alt="Image" class="img-fluid"></a>
               </div>
               <div class="prop-details p-3">
-                <div><a href="imovel.php#imovel"><strong class="price">R$4.800,000</strong></a></div>
+                <div><a href="imovel.php"><strong class="price">R$4.800,000</strong></a></div>
                 <div class="mb-2 d-flex justify-content-between">
                 <p><span>8 Quartos</span>, 
                   <span>5 Banheiros</span>,
@@ -182,10 +182,10 @@
 
             <div class="property horizontal d-flex">
               <div class="mr-3 img-entry">
-                <a href="imovel.php#imovel"><img src="images/property_5-sm.jpg" alt="Image" class="img-fluid"></a>
+                <a href="imovel.php"><img src="images/property_5-sm.jpg" alt="Image" class="img-fluid"></a>
               </div>
               <div class="prop-details p-3">
-                <div><a href="imovel.php#imovel"><strong class="price">R$3.900,000</strong></a></div>
+                <div><a href="imovel.php"><strong class="price">R$3.900,000</strong></a></div>
                 <div class="mb-2 d-flex justify-content-between">
                 <p><span>5 Quartos</span>, 
                   <span>3 Banheiros</span>,
@@ -227,7 +227,7 @@
         <div class="owl-carousel nonloop-block-13 mb-5">
 
         <div class="property">
-            <a href="imovel.html">
+            <a href="imovel.php">
               <img src="images/property_1.jpg" alt="Image" class="img-fluid">
             </a>
             <div class="prop-details p-3">
@@ -242,7 +242,7 @@
           </div>
 
           <div class="property">
-            <a href="imovel.html">
+            <a href="imovel.php">
               <img src="images/property_2.jpg" alt="Image" class="img-fluid">
             </a>
             <div class="prop-details p-3">
@@ -257,7 +257,7 @@
           </div>
 
           <div class="property">
-            <a href="imovel.html">
+            <a href="imovel.php">
               <img src="images/property_3.jpg" alt="Image" class="img-fluid">
             </a>
             <div class="prop-details p-3">
@@ -272,7 +272,7 @@
           </div>
 
           <div class="property">
-            <a href="imovel.html">
+            <a href="imovel.php">
               <img src="images/property_4.jpg" alt="Image" class="img-fluid">
             </a>
             <div class="prop-details p-3">

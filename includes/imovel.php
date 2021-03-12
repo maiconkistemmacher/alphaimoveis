@@ -28,22 +28,9 @@
             <div class="mb-5">
               <h3 class="text-black mb-4">Descrição do Imóvel</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa tempore repudiandae optio aliquam perspiciatis est quae enim quaerat eos hic dolorem accusamus molestias repellat consequatur velit, officiis nihil magnam placeat!</p>
-              <!-- <p>Ex, esse? Obcaecati nam in cum eius quaerat repellendus adipisci ducimus dolorum sed quos. Amet recusandae cumque reprehenderit nam quia voluptatibus, repellat, aspernatur ut fuga perferendis consectetur excepturi neque in!</p> -->
-              <p class="mb-4">Neque facilis iure earum, placeat odit ipsum, amet, optio accusantium voluptatem quasi obcaecati fugit? Explicabo eius dolorem provident quis non voluptas, dignissimos tempora eligendi, in, nam velit, quasi tenetur. Animi!</p>
+              <p class="mb-4">Neque facilis iure earum, placeat odit ipsum, amet, optio accusantium voluptatem quasi obcaecati fugit? Explicabo eius dolorem provident quis non voluptas, dignissimos tempora eligendi, in, nam velit, quasi tenetur. Animi!</p><br>
               <p><a href="index.php#contato" class="btn btn-primary">Entre em contato</a></p>
-            </div>
-
-            <!-- <div class="mb-5">
-              <h3 class="text-black mb-4">Contact Agent</h3>
-              <div class="mt-5">
-                <img src="images/person_8.jpg" alt="Image" class="w-25 mb-3 rounded-circle">
-                <h4 class="text-black">Kyla Stewart</h4>
-                <p class="text-muted mb-4">Real Estate Agent</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, iure atque sit ratione vitae neque! Laborum voluptate eius, laboriosam explicabo!</p>
-                <p><a href="#" class="btn btn-primary btn-sm">Contact Agent</a></p>
-              </div>
-            </div> -->
-
+            </div>        
           </div>
         </div>
       </div>

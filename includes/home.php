@@ -48,7 +48,7 @@
         <div class="owl-carousel nonloop-block-13 mb-5">
 
           <div class="property">
-            <a href="imovel.html">
+            <a href="imovel.php">
               <img src="images/property_1.jpg" alt="Image" class="img-fluid">
             </a>
             <div class="prop-details p-3">
@@ -63,7 +63,7 @@
           </div>
 
           <div class="property">
-            <a href="imovel.html">
+            <a href="imovel.php">
               <img src="images/property_2.jpg" alt="Image" class="img-fluid">
             </a>
             <div class="prop-details p-3">
@@ -78,7 +78,7 @@
           </div>
 
           <div class="property">
-            <a href="imovel.html">
+            <a href="imovel.php">
               <img src="images/property_3.jpg" alt="Image" class="img-fluid">
             </a>
             <div class="prop-details p-3">
@@ -93,7 +93,7 @@
           </div>
 
           <div class="property">
-            <a href="imovel.html">
+            <a href="imovel.php">
               <img src="images/property_4.jpg" alt="Image" class="img-fluid">
             </a>
             <div class="prop-details p-3">

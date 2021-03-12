@@ -23,7 +23,7 @@ if(isset($_POST['endereco'],$_POST['banheiros'],$_POST['quartos'],$_POST['valor'
     exit;  
 }
 
-include __DIR__.'/includes/header.php';
+include __DIR__.'/includes/header.imovel.php';
 include __DIR__.'/includes/imovel.php';
 include __DIR__.'/includes/footer.php';
 
