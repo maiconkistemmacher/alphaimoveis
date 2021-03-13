@@ -25,11 +25,12 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 -- Inserindo dados da tabela `usuarios`
 --
 
+
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `situacao_id`, `niveis_acesso_id`, `created`, `modified`) VALUES
 (1, 'Maicon Kistemmacher', 'maicon.kistemmacher@gmail.com', '3f9afdf186ff91efc696a17713ab8f9d', 1, 1, '2021-03-12 12:00:01', '2021-03-12 12:00:10'),
 (2, 'Christine Labrenz', 'chrys_chrys.lab@hotmail.com', '93279e3308bdbbeed946fc965017f67a', 1, 2, '2021-03-12 12:00:02', '2021-03-12 12:00:20'),
 (3, 'Caio Costa', 'caio@rfti.com.br', '202cb962ac59075b964b07152d234b70', 1, 1, '2021-03-12 12:00:03', '2021-03-12 12:00:30');
- 
+
 
 -- --------------------------------------------------------
 
@@ -46,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `niveis_acessos` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
--- Inserindo dados da tabela `niveis_acessos`
+-- Inserindo dados na tabela `niveis_acessos`
 --
 
 INSERT INTO `niveis_acessos` (`id`, `nome`, `created`, `modified`) VALUES

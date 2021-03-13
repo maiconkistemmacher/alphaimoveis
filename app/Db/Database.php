@@ -13,7 +13,7 @@ use \PDO;
                 $senha = "root";
                 $dbname = "database";
                 
-                //Criar a conexao
+                //Cria a conexao
                 $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
                 
                 if(!$conn){

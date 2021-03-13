@@ -43,8 +43,7 @@ session_start();
         <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
         <label for="inputPassword" class="sr-only">Senha</label>
         <input type="password" name="senha" id="inputPassword" class="form-control" placeholder="Senha" required>
-        <button class="btn btn-lg btn-danger btn-block" type="submit">Acessar</button><br>
-        <!-- <button class="btn btn-lg btn-danger btn-block" href="index.php" role="button">Voltar</button> -->
+        <button class="btn btn-lg btn-danger btn-block" type="submit">Acessar</button><br>        
         <a class="btn btn-lg btn-danger btn-block" href="index.php" role="button">Voltar</a>
       </form>
 	  <p class="text-center text-danger">
