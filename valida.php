@@ -20,9 +20,9 @@
 			$_SESSION['usuarioNiveisAcessoId'] = $resultado['niveis_acesso_id'];
 			$_SESSION['usuarioEmail'] = $resultado['email'];
 			if($_SESSION['usuarioNiveisAcessoId'] == "1"){
-				header("Location: dashboard.php");
+				header("Location: dashboard.usuarios.php");
 			}elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
-				header("Location: dashboard.php");
+				header("Location: dashboard.usuarios.php");
 			}else{
 				header("Location: index.php");
 			}

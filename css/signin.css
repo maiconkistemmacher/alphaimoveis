@@ -1,7 +1,6 @@
 body {
   padding-top: 40px;
   padding-bottom: 40px;
-  /* background-image: url(images/hero_1.jpg); */
   background-color: #eee;
 }
 
@@ -34,13 +33,13 @@ body {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   margin-top: 20px;
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
-  border-top-right-radius: 0;  
-  margin-bottom:20px;
+  border-top-right-radius: 0;
+  margin-bottom: 20px;
   margin-top: 20px;
 }
