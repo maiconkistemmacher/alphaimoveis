@@ -37,7 +37,7 @@
         <div class="row align-items-center">
 
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo m-0 p-0"><a href="" class="mb-0">AlphaImóveis</a></h1>
+            <h1 class="mb-0 site-logo m-0 p-0"><a href="" class="mb-0">ALPHAIMÓVEIS</a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
@@ -49,41 +49,35 @@
                 <li><a href="index.php#investimentos" class="nav-link">Investimentos</a></li>
                 <li><a href="index.php#contato" class="nav-link">Contato</a></li>
 
-                <li class="nav-item">
-                        <a class="btn btn-outline-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Entrar</a>
-                        <form class="dropdown-menu p-2" method="POST" action="valida.php">
-                            <div class="form-group" style="width: 300px;">
-                                <label for="exampleDropdownFormEmail2">Email</label>
-                                <input type="email" name="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleDropdownFormPassword2">Senha</label>
-                                <input type="password" name="senha" class="form-control" id="exampleDropdownFormPassword2" placeholder="">
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                                <label class="form-check-label" for="dropdownCheck2">
-                                    Lembrar
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Entrar</button>
-                        </form>
-                            <p class="text-center text-danger">
-                                <?php if(isset($_SESSION['loginErro'])){
-                                    echo $_SESSION['loginErro'];
-                                    unset($_SESSION['loginErro']);
-                                }?>
-                            </p>
-                            <p class="text-center text-success">
-                                <?php
-                                if(isset($_SESSION['logindeslogado'])){
-                                    echo $_SESSION['logindeslogado'];
-                                    unset($_SESSION['logindeslogado']);
-                                }
-                                ?>
-                            </p>
-                    </div>
-
+                  <li class="nav-item">
+                          <a class="btn btn-outline-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Entrar</a>
+                          <form class="dropdown-menu p-2" method="POST" action="valida.php">
+                              <div class="form-group" style="width: 300px;">
+                                  <label for="exampleDropdownFormEmail2">Email</label>
+                                  <input type="email" name="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="">
+                              </div>
+                              <div class="form-group">
+                                  <label for="exampleDropdownFormPassword2">Senha</label>
+                                  <input type="password" name="senha" class="form-control" id="exampleDropdownFormPassword2" placeholder="">
+                              </div>
+                              
+                              <button type="submit" class="btn btn-primary">Entrar</button>
+                          </form>
+                              <p class="text-center text-danger">
+                                  <?php if(isset($_SESSION['loginErro'])){
+                                      echo $_SESSION['loginErro'];
+                                      unset($_SESSION['loginErro']);
+                                  }?>
+                              </p>
+                              <p class="text-center text-success">
+                                  <?php
+                                  if(isset($_SESSION['logindeslogado'])){
+                                      echo $_SESSION['logindeslogado'];
+                                      unset($_SESSION['logindeslogado']);
+                                  }
+                                  ?>
+                              </p>
+                      </div>
               </ul>
             </nav>
           </div>

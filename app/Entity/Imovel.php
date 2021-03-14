@@ -57,7 +57,7 @@ class Imovel{
         //DEFINIR A DATA
         $this->data = date('Y-m-d H:i:s');
 
-        //ENVIAR O IMÓVEL PARA O BANCO
+        //INSERIR O IMÓVEL PARA O BANCO
         $pDatabase = new Database ('imoveis');
         $this->id = $pDatabase->insert([
                                             'endereco'  => $this->endereco,
@@ -67,7 +67,7 @@ class Imovel{
                                             'tamanho'   => $this->tamanho,
                                             'descricao' => $this->descricao,
                                             'data'      => $this->data
-                                        ]);                                                      
+                                        ]);      echo "<pre>"; print_r($contato); echo "</pre>"; exit;                                                
         //RETORNA SUCESSO
         return true;
         }

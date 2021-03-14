@@ -48,7 +48,35 @@
                 <li><a href="lista.php#imoveis" class="nav-link">Imóveis</a></li>
                 <li><a href="index.php#investimentos" class="nav-link">Investimentos</a></li>
                 <li><a href="index.php#contato" class="nav-link">Contato</a></li>
-                <li class="nav-item"><a class="btn btn-outline-primary" href="#" role="button">Entrar</a>
+                <li class="nav-item">
+                          <a class="btn btn-outline-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Entrar</a>
+                          <form class="dropdown-menu p-2" method="POST" action="valida.php">
+                              <div class="form-group" style="width: 300px;">
+                                  <label for="exampleDropdownFormEmail2">Email</label>
+                                  <input type="email" name="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="">
+                              </div>
+                              <div class="form-group">
+                                  <label for="exampleDropdownFormPassword2">Senha</label>
+                                  <input type="password" name="senha" class="form-control" id="exampleDropdownFormPassword2" placeholder="">
+                              </div>
+                              
+                              <button type="submit" class="btn btn-primary">Entrar</button>
+                          </form>
+                              <p class="text-center text-danger">
+                                  <?php if(isset($_SESSION['loginErro'])){
+                                      echo $_SESSION['loginErro'];
+                                      unset($_SESSION['loginErro']);
+                                  }?>
+                              </p>
+                              <p class="text-center text-success">
+                                  <?php
+                                  if(isset($_SESSION['logindeslogado'])){
+                                      echo $_SESSION['logindeslogado'];
+                                      unset($_SESSION['logindeslogado']);
+                                  }
+                                  ?>
+                              </p>
+                      </div>
               </ul>
             </nav>
           </div>
