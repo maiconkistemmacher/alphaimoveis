@@ -40,7 +40,8 @@
           </div>
           <div class="col-md-5 text-left text-md-right">
             <div class="custom-nav1">
-              <a href="#" class="custom-prev1"><</a><span class="mx-3">/</span><a href="#" class="custom-next1">></a>
+              <!-- <a href="#" class="custom-prev1"><</a><span class="mx-3">/</span><a href="#" class="custom-next1">></a> -->
+              <a href="#" class="custom-prev1">Anterior</a><span class="mx-3">/</span><a href="#" class="custom-next1">Próxima</a>
             </div>
           </div>
         </div>

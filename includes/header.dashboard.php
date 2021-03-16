@@ -38,7 +38,7 @@
             <div class="row align-items-center">
 
                 <div class="col-6 col-xl-2">
-                    <h1 class="mb-0 site-logo m-0 p-0"><a href="" class="mb-0"></a></h1>
+                    <h1 class="mb-0 site-logo m-0 p-0"><a href="" class="mb-0">ALPHAIMÓVEIS</a></h1>
                 </div>
 
                 <div class="col-12 col-md-10 d-none d-xl-block">
@@ -60,15 +60,15 @@
 
 
     <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url(images/hero_1.jpg);" data-aos="fade" id="home-section">
-        <!-- <div class="container">
+        <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-6 mt-lg-5 text-center">
-                    <h1</h1>
+                    <h1></h1>
                     <p class="mb-5"><strong class="text-white"></strong> </p>
 
                 </div>
             </div>
-        </div> -->
+        </div>
     </div> <!-- .site-wrap -->
 
     <div class="container theme-showcase" role="main">
