@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use \App\Db\Database;
 use \PDO;
+use \PDOException;
 
 class Imovel{
 
@@ -57,9 +58,10 @@ class Imovel{
         //DEFINIR A DATA
         $this->data = date('Y-m-d H:i:s');
 
-        //INSERIR O IMÓVEL PARA O BANCO
-        $pDatabase = new Database ('imoveis');
-        $this->id = $pDatabase->insert([
+        //INSERIR IMÓVEL NO BANCO
+        $obDatabase = new Database ('imoveis');        
+
+        $this->id = $obDatabase->insert([
                                             'endereco'  => $this->endereco,
                                             'banheiros' => $this->banheiros,
                                             'quartos'   => $this->quartos,
@@ -67,7 +69,7 @@ class Imovel{
                                             'tamanho'   => $this->tamanho,
                                             'descricao' => $this->descricao,
                                             'data'      => $this->data
-                                        ]);      echo "<pre>"; print_r($contato); echo "</pre>"; exit;                                                
+                                        ]);                                                      
         //RETORNA SUCESSO
         return true;
         }
@@ -79,8 +81,22 @@ class Imovel{
      * @param string $limit
      * @return array
      */
-    public static function getContato($where = null, $order = null, $limit = null){
+    public static function getImoveis($where = null, $order = null, $limit = null){
         return (new Database('imoveis'))->select($where,$order,$limit)
                                         ->fetchAll(PDO::FETCH_CLASS,self::class);
         }
-}
+
+
+    /**
+     * Método responsável por buscar um imóvel no banco com base em seu ID
+     * @param integer $id
+     * @return Imovel
+     */
+    public static function getImovel($id){
+        return (new Database('imoveis'))->select('id = '.$id)
+                                        ->fetchObject(self::class);
+
+    }
+
+
+    }

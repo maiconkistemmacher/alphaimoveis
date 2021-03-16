@@ -3,7 +3,7 @@
 namespace App\Db;
 
 use \PDO;
-
+use \PDOException;
 
     /**
     * Sessão responsável pelo Login da área restrita 
@@ -102,7 +102,7 @@ class Database{
          $statement = $this->connection->prepare($query);
          $statement->execute($params);
          return $statement;
-        }catch(PDOException $e){
+       }catch(PDOException $e){
             die('ERROR: '.$e->getMessage());
         }
     }
@@ -146,11 +146,7 @@ class Database{
         $query = 'SELECT '.$fields.' FROM '.$this->table.' '.$where.' '.$order.' '.$limit;
 
         //EXECUTA A QUERY
-        return $this->execute($query);
-
-
-
-               
+        return $this->execute($query);               
        
-    } 
+        } 
 }

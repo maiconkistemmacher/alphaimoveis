@@ -1,6 +1,5 @@
-<nav class="nav nav-pills nav-justified"><a class="nav-item nav-link active">Cadastrar novo Imóvel</a><br></nav><br>  
-<div class="d-flex justify-content-end"><a href="dashboard.imoveis.php"><button type="button" class="badge badge-pill badge-warning">Voltar</button></a>
-        <a href=""><button type="submit" class="badge badge-pill badge-warning">Cadastrar</button></a></div>
+<nav class="nav nav-pills nav-justified"><a class="nav-item nav-link active">Cadastrar novo Imóvel</a><br></nav><br>
+    
 <div class="d-flex justify-content-end">
     <form method="post">
         <div class="form-row">
@@ -50,8 +49,9 @@
                 <textarea class="form-control" name="descricao" rows="5"></textarea>
             </div>
         </div>
-        
-             
-        
+        <div class="d-flex justify-content-end">
+            <a href="dashboard.imoveis.php"><button type="button" class="badge badge-pill badge-warning">Voltar</button></a>
+            <button type="submit" class="badge badge-pill badge-warning">Cadastrar</button>
+        </div>
     </form>
 </div>
