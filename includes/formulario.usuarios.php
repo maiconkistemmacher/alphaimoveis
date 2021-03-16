@@ -19,7 +19,7 @@
                     <input type="password" class="form-control" name="password">
                 </div><br><br>
 
-                <div class="form-group col-md-2"><br>
+                <div class="form-group col-md-2"><br><label>Situação:</label>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-primary active">
                         <input type="radio" name="ativo" checked> Ativo
@@ -28,7 +28,7 @@
                         <label class="btn btn-primary">
                         <input type="radio" name="inativo"> Inativo
                         </label>                   
-                    </div><p>
+                    </div><br><br><label>Nível de acesso:</label>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-primary active">
                         <input type="radio" name="administrador" checked> Administrador

@@ -17,7 +17,7 @@
 <nav class="nav nav-pills nav-fill"><a class="nav-item nav-link active">Imóveis Cadastrados</a><br></nav><br>
 
 <div class="d-flex justify-content-end">
-    <a href="cadastrar.imoveis.php"><button type="button" class="badge badge-pill badge-warning">Cadastrar Imóvel</button></a></div>    
+    <a href="cadastrar.imoveis.php"><button type="button" class="badge badge-pill badge-warning">Cadastrar Imóvel</button></a></div><br>    
           
 <div class="row">               
     <div class="col-md-12">

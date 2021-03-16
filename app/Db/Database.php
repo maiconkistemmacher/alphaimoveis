@@ -11,7 +11,7 @@ use \PDOException;
                 $servidor = "localhost";
                 $usuario = "root";
                 $senha = "root";
-                $dbname = "database";
+                $dbname = "alphaimoveis";
                 
                 //Cria a conexao
                 $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
@@ -37,7 +37,7 @@ class Database{
      * Nome do banco de dados
      * @var string
      */
-    const NAME = 'database';
+    const NAME = 'alphaimoveis';
 
 
     /**
