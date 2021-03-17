@@ -14,8 +14,7 @@ $obImovel = new Imovel;
 
 // //VALIDAÇÃO DO POST
 if(isset($_POST['endereco'],$_POST['quartos'],$_POST['banheiros'],$_POST['tamanho'],$_POST['valor'],$_POST['ativo'],$_POST['descricao'])){    
-
-     $obImovel = new Imovel;
+     
      $obImovel->endereco     = $_POST['endereco'];
      $obImovel->quartos      = $_POST['quartos'];
      $obImovel->banheiros    = $_POST['banheiros'];
