@@ -51,8 +51,26 @@ class Imovel{
     public $descricao;
 
     /**
+     * Referência as imagens do imóvel
+     * @var string
+     */
+    public $imagens;
+
+    /**
+     * Define se o imóvel está ativo ou inativo
+     * @var string(s/n)
+     */
+    public $ativo;
+
+    /**
+     * Data de cadastro do imóvel
+     * @var string
+     */
+    public $data;
+
+    /**
      * Método responsável por cadastrar um novo imóvel no banco
-     * @return string
+     * @return boolean
      */
     public function cadastrar (){
         //DEFINIR A DATA
@@ -69,7 +87,8 @@ class Imovel{
                                             'tamanho'   => $this->tamanho,
                                             'descricao' => $this->descricao,
                                             'imagens'   => $this->imagens,
-                                            'data'      => $this->data
+                                            'data'      => $this->data,
+                                            'ativo'     => $this->ativo
                                         ]);                                                      
         //RETORNA SUCESSO
         return true;

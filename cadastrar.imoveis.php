@@ -17,7 +17,9 @@ if(isset($_POST['endereco'],$_POST['quartos'],$_POST['banheiros'],$_POST['tamanh
      $obImovel->banheiros    = $_POST['banheiros'];
      $obImovel->tamanho      = $_POST['tamanho'];
      $obImovel->valor        = $_POST['valor'];
-     $obImovel->descricao    = $_POST['descricao'];     
+     $obImovel->descricao    = $_POST['descricao'];
+     $obImovel->imagens      = $_POST['imagens'];
+     $obImovel->ativo        = $_POST['ativo'];     
     $obImovel->cadastrar();
 
        header('location: dashboard.imoveis.php?status=sucess');
