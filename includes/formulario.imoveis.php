@@ -49,7 +49,7 @@
                 <textarea class="form-control" name="descricao" rows="5"></textarea>
             </div>
         </div>
-        <div class="d-flex justify-content-end">
+        <div class="d-flex justify-content">
             <a href="dashboard.imoveis.php"><button type="button" class="badge badge-pill badge-warning">Voltar</button></a>
             <button type="submit" class="badge badge-pill badge-warning">Cadastrar</button>
         </div>

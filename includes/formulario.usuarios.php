@@ -17,32 +17,42 @@
                 <div class="form-group col-md-5">
                     <label>Senha:</label>
                     <input type="password" class="form-control" name="password">
-                </div><br><br>
-
-                <div class="form-group col-md-2"><br><label>Situação:</label>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-primary active">
-                        <input type="radio" name="ativo" checked> Ativo
-                        </label>
-
-                        <label class="btn btn-primary">
-                        <input type="radio" name="inativo"> Inativo
-                        </label>                   
-                    </div><br><br><label>Nível de acesso:</label>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-primary active">
-                        <input type="radio" name="administrador" checked> Administrador
-                        </label>
-
-                        <label class="btn btn-primary">
-                        <input type="radio" name="cliente"> Cliente
-                        </label>                   
-                    </div>   
-                </div>
+                </div>                                       
         </div>
-            <div class="d-flex justify-content-end">
+        <div class="container">            
+                <label>Situação:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="situacao_id" checked>
+                        <label class="form-check-label">
+                            Ativo
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="situacao_id">
+                        <label class="form-check-label">
+                            Inativo
+                        </label>
+                    </div>           
+        </div> 
+        <div class="container">
+                <label>Nível de acesso:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="niveis_acesso_id" checked>
+                        <label class="form-check-label">
+                            Administrador
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="niveis_acesso_id">
+                        <label class="form-check-label"">
+                            Cliente
+                        </label>
+                    </div>
+        </div><br>    
+                    
+        <div class="d-flex justify-content">
                 <a href="dashboard.usuarios.php"><button type="button" class="badge badge-pill badge-warning">Voltar</button></a>
                 <button type="submit" class="badge badge-pill badge-warning">Cadastrar</button> 
             </div>                                     
-    </form><br>       
+    </form>       
 </div>

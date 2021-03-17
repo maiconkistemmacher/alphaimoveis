@@ -14,10 +14,7 @@
     }
 ?>
 
-<nav class="nav nav-pills nav-fill"><a class="nav-item nav-link active">Imóveis Cadastrados</a><br></nav><br>
-
-<div class="d-flex justify-content-end">
-    <a href="cadastrar.imoveis.php"><button type="button" class="badge badge-pill badge-warning">Cadastrar Imóvel</button></a></div><br>    
+<nav class="nav nav-pills nav-fill"><a class="nav-item nav-link active">Imóveis Cadastrados</a><br></nav><br>    
           
 <div class="row">               
     <div class="col-md-12">
@@ -33,20 +30,12 @@
                 </tr>
             </thead>
             <tbody><?=$resultados?>
-                <!-- <tr>
-                    <td>1</td>
-                    <td>Residencial Cinco - Alphaville</td>
-                    <td>R$3.4000,000</td>
-                    <td>420 m2</td>                
-                    <td> 
-                        <div class="d-flex justify-content-end">                                              
-                        <a href=""><button type="button" class="badge badge-pill badge-warning">Editar</button></a>
-                        <a href=""><button type="button" class="badge badge-pill badge-warning">Excluir</button></a></div>
-                    </td>
-                </tr>                        -->
+                
             </tbody>
 
         </table>
     </div>
-</div>
+    
+</div><div class="d-flex justify-content">
+    <a href="cadastrar.imoveis.php"><button type="button" class="badge badge-pill badge-warning">Cadastrar Imóvel</button></a></div><br>
 

@@ -4,7 +4,7 @@ namespace App\Entity;
 
 use \App\Db\Database;
 use \PDO;
-use \PDOException;
+
 
 class Imovel{
 
@@ -68,6 +68,7 @@ class Imovel{
                                             'valor'     => $this->valor,      
                                             'tamanho'   => $this->tamanho,
                                             'descricao' => $this->descricao,
+                                            'imagens'   => $this->imagens,
                                             'data'      => $this->data
                                         ]);                                                      
         //RETORNA SUCESSO

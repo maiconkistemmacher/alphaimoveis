@@ -1,7 +1,4 @@
-<nav class="nav nav-pills nav-fill"><a class="nav-item nav-link active">Usuários Cadastrados</a><br></nav><br>
-
-<div class="d-flex justify-content-end">
-    <a href="cadastrar.usuarios.php"><button type="button" class="badge badge-pill badge-warning">Cadastrar Usuário</button></a></div><br>    
+<nav class="nav nav-pills nav-fill"><a class="nav-item nav-link active">Usuários Cadastrados</a><br></nav><br>    
 
 <div class="row">
     <div class="col-md-12">
@@ -11,7 +8,8 @@
                 <th>ID</th>
                 <th>Nome</th>                
                 <th>Situação</th>
-                <th>Nivel de acesso</th>                                                          
+                <th>Nivel de acesso</th>
+                <th>Ações</th>                                                          
             </tr>
             </thead>
             <tbody>
@@ -21,8 +19,8 @@
                 <td>Ativo</td>
                 <td>Administrador</td>
                 <td>             
-                <div class="d-flex justify-content-end"><button type="button" class="badge badge-pill badge-warning" >Editar</button>
-                   <button type="button" class="badge badge-pill badge-warning">Excluir</button></div>
+                <div class="d-flex justify-content"><button type="button" class="badge badge-pill badge-warning" >Editar</button>
+                   <button type="button" class="badge badge-pill badge-danger">Excluir</button></div>
                 </td>
             </tr>
             <tr>
@@ -31,8 +29,8 @@
                 <td>Ativo</td>
                 <td>Administrador</td>                
                 <td>                    
-                <div class="d-flex justify-content-end"><button type="button" class="badge badge-pill badge-warning" >Editar</button>
-                   <button type="button" class="badge badge-pill badge-warning">Excluir</button></div>
+                <div class="d-flex justify-content"><button type="button" class="badge badge-pill badge-warning" >Editar</button>
+                   <button type="button" class="badge badge-pill badge-danger">Excluir</button></div>
                 </td>
             </tr>
             <tr>
@@ -41,11 +39,13 @@
                 <td>Ativo</td>
                 <td>Administrador</td>                
                 <td>                    
-                <div class="d-flex justify-content-end"><button type="button" class="badge badge-pill badge-warning" >Editar</button>
-                   <button type="button" class="badge badge-pill badge-warning">Excluir</button></div>
+                <div class="d-flex justify-content"><button type="button" class="badge badge-pill badge-warning" >Editar</button>
+                   <button type="button" class="badge badge-pill badge-danger">Excluir</button></div>
                 </td>
             </tr>
             </tbody>
         </table>
     </div>
 </div>
+<div class="d-flex justify-content">
+    <a href="cadastrar.usuarios.php"><button type="button" class="badge badge-pill badge-warning">Cadastrar Usuário</button></a></div><br>

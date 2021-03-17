@@ -10,7 +10,7 @@ use \PDOException;
     */
                 $servidor = "localhost";
                 $usuario = "root";
-                $senha = "root";
+                $senha = "";
                 $dbname = "alphaimoveis";
                 
                 //Cria a conexao
@@ -51,7 +51,7 @@ class Database{
      * Senha do banco de dados
      * @var string
      */
-    const PASS = 'root';
+    const PASS = '';
 
 
      /**

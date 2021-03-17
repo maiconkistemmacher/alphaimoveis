@@ -12,7 +12,7 @@ if(!isset($_GET['id']) or !is_numeric($_GET['id'])){
 }
 
     $obImovel = Imovel::getImovel($_GET['id']);
-    echo "<pre>"; print_r($obImovel); "</pre>"; exit;
+    // echo "<pre>"; print_r($obImovel); "</pre>"; exit;
 
 
 //DEBUGGER
