@@ -83,11 +83,11 @@ class Imovel{
                                             'endereco'  => $this->endereco,
                                             'banheiros' => $this->banheiros,
                                             'quartos'   => $this->quartos,
+                                            'valor'     => $this->valor,
                                             'tamanho'   => $this->tamanho,
-                                            'valor'     => $this->valor,     
+                                            'descricao' => $this->descricao,     
                                             'imagens'   => $this->imagens,
-                                            'ativo'     => $this->ativo,
-                                            'descricao' => $this->descricao,                                            
+                                            'ativo'     => $this->ativo,                                                                                        
                                             'data'      => $this->data                                            
                                         ]);                                                      
         //RETORNA SUCESSO

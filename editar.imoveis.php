@@ -4,6 +4,7 @@
 require __DIR__.'/vendor/autoload.php';
 
 define('TITLE', 'Editar Imóvel');
+define('BUTTON', 'Editar');
 
 use \App\Entity\Imovel;
 
@@ -22,13 +23,8 @@ if(!$obImovel instanceof Imovel){
     exit;
 }
 
-
-//DEBUGGER
-// echo "<pre>"; print_r($_POST); echo "</pre>"; exit;
-
 // //VALIDAÇÃO DO POST
 if(isset($_POST['endereco'],$_POST['quartos'],$_POST['banheiros'],$_POST['tamanho'],$_POST['valor'],$_POST['imagens'],$_POST['ativo'],$_POST['descricao'])){    
-
     
     $obImovel->endereco     = $_POST['endereco'];
     $obImovel->quartos      = $_POST['quartos'];
@@ -37,9 +33,8 @@ if(isset($_POST['endereco'],$_POST['quartos'],$_POST['banheiros'],$_POST['tamanh
     $obImovel->valor        = $_POST['valor'];
     $obImovel->imagens      = $_POST['imagens'];
     $obImovel->ativo        = $_POST['ativo'];
-    $obImovel->descricao    = $_POST['descricao'];
-    echo "<pre>"; print_r($obImovel); echo "</pre>"; exit;     
-//    $obImovel->cadastrar();
+    $obImovel->descricao    = $_POST['descricao'];        
+    $obImovel->atualizar();
 
       header('location: dashboard.imoveis.php?status=sucess');
       exit; 

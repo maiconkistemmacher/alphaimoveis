@@ -4,8 +4,10 @@
 require __DIR__.'/vendor/autoload.php';
 
 define('TITLE', 'Cadastrar novo Imóvel');
+define('BUTTON', 'Cadastrar');
 
 use \App\Entity\Imovel;
+$obImovel = new Imovel;
 
 //DEBUGGER
 // echo "<pre>"; print_r($_POST); echo "</pre>"; exit;
@@ -22,7 +24,7 @@ if(isset($_POST['endereco'],$_POST['quartos'],$_POST['banheiros'],$_POST['tamanh
      $obImovel->imagens      = $_POST['imagens'];
      $obImovel->ativo        = $_POST['ativo'];
      $obImovel->descricao    = $_POST['descricao'];     
-    $obImovel->cadastrar();
+        $obImovel->cadastrar();
 
        header('location: dashboard.imoveis.php?status=sucess');
        exit; 

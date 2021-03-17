@@ -12,8 +12,8 @@
         <div class="form-row">
             <div class="form-group col-md-1">
                 <label>Quartos</label>
-                <select id="inputQuartos" class="form-control" name="quartos" value="<?=$obImovel->quartos?>">
-                    <option selected>3</option>        
+                <select id="inputQuartos" class="form-control" name="quartos">
+                    <option selected><?=$obImovel->quartos?></option>        
                     <option>4</option>
                     <option>5</option>
                     <option>6</option>
@@ -23,7 +23,7 @@
             <div class="form-group col-md-1">
                 <label>Banheiros</label>
                 <select id="inputBanheiros" class="form-control" name="banheiros" value="<?=$obImovel->banheiros?>">        
-                    <option selected>2</option>
+                    <option selected><?=$obImovel->banheiros?></option>
                     <option>3</option>
                     <option>4</option>
                     <option>5</option>
@@ -40,35 +40,32 @@
             </div>
             <div class="mb-1">
                 <label for="formFileMultiple" class="form-label">Fotos do Imóvel</label>
-                <input class="form-control" type="file" id="formFileMultiple" value="<?=$obImovel->imagens?>" multiple>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
             </div><br> 
         </div><p>
         <div class="form-row">
             <div class="container">            
                     <label>Situação:</label>&nbsp;&nbsp;&nbsp;
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="ativo" value="<?=$obImovel->ativo?>" multiple>
-                            <label class="form-check-label">
-                                Ativo
+                            <input class="form-check-input" type="radio" name="ativo" value="s" checked>
+                            <label class="form-check-label"> Ativo
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="ativo" value="<?=$obImovel->ativo?>">
-                            <label class="form-check-label">
-                                Inativo
-                            </label>
+                            <input class="form-check-input" type="radio" name="ativo" value="n" <?=$obImovel->ativo == 'n' ? 'checked' : ''?>> Inativo
+                        </label>
                         </div><br><p>          
             </div>
         </div>
         <div class="form-row">
         <div class="form-group col-md-10">
                 <label>Descrição do Imóvel</label>
-                <textarea class="form-control" value="<?=$obImovel->descricao?>" name="descricao" rows="5"></textarea>
+                <textarea class="form-control" name="descricao" rows="5"><?=$obImovel->descricao?></textarea>
             </div>
         </div>
         <div class="d-flex justify-content">
             <a href="dashboard.imoveis.php"><button type="button" class="badge badge-pill badge-warning">Voltar</button></a>
-            <button type="submit" class="badge badge-pill badge-warning">Cadastrar</button>
+            <button type="submit" class="badge badge-pill badge-warning"><?=BUTTON?></button>
         </div>
     </form>
 </div>
