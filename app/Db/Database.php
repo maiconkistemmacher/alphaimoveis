@@ -97,7 +97,7 @@ class Database{
      * @param array $params
      * @return PDOStatement
      */
-    public function execute($query,$params =[]){
+    public function execute($query,$params = []){
         try{
          $statement = $this->connection->prepare($query);
          $statement->execute($params);
@@ -139,8 +139,8 @@ class Database{
     public function select($where = null, $order = null, $limit = null, $fields = '*'){
         //DADOS DA QUERY
         $where = strlen($where) ? 'WHERE '.$where : '';
-        $where = strlen($order) ? 'ORDER BY '.$order : '';
-        $where = strlen($limit) ? 'LIMIT '.$limit : '';
+        $order = strlen($order) ? 'ORDER BY '.$order : '';
+        $limit = strlen($limit) ? 'LIMIT '.$limit : '';
 
         //MONTA A QUERY
         $query = 'SELECT '.$fields.' FROM '.$this->table.' '.$where.' '.$order.' '.$limit;

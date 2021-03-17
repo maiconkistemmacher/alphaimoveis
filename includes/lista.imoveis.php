@@ -23,7 +23,7 @@
                     <th>ID</th>
                     <th>Endereço</th>                
                     <th>Situação</th>
-                    <th>Data de Cadastro</th>
+                    <th>Cadastro/Atualização</th>
                     <th>Ações</th>                                                       
                 </tr>
             </thead>

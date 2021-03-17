@@ -1,4 +1,4 @@
-<nav class="nav nav-pills nav-justified"><a class="nav-item nav-link active" style="color:white;">Cadastrar novo Imóvel</a><br></nav><br>
+<nav class="nav nav-pills nav-justified"><a class="nav-item nav-link active" style="color:white;"><?=TITLE?></a></nav><p>
     
 <div class="d-flex justify-content-end">
     <form method="post">
@@ -6,13 +6,13 @@
       
             <div class="form-group col-md-10">
                 <label>Endereço do Imóvel</label>
-                <input type="text" class="form-control" name="endereco">
+                <input type="text" class="form-control" name="endereco" value="<?=$obImovel->endereco?>">
             </div>
         </div>     
         <div class="form-row">
             <div class="form-group col-md-1">
                 <label>Quartos</label>
-                <select id="inputQuartos" class="form-control" name="quartos">
+                <select id="inputQuartos" class="form-control" name="quartos" value="<?=$obImovel->quartos?>">
                     <option selected>3</option>        
                     <option>4</option>
                     <option>5</option>
@@ -22,7 +22,7 @@
             </div>
             <div class="form-group col-md-1">
                 <label>Banheiros</label>
-                <select id="inputBanheiros" class="form-control" name="banheiros">        
+                <select id="inputBanheiros" class="form-control" name="banheiros" value="<?=$obImovel->banheiros?>">        
                     <option selected>2</option>
                     <option>3</option>
                     <option>4</option>
@@ -32,21 +32,38 @@
             </div>    
             <div class="form-group col-md-1">
                 <label>Tamanho</label>
-                <input type="text" class="form-control" name="tamanho">
+                <input type="text" class="form-control" name="tamanho" value="<?=$obImovel->tamanho?>">
             </div>
             <div class="form-group col-md-2">
                 <label>Valor</label>                                
-                <input type="text" class="form-control" name="valor">                
+                <input type="text" class="form-control" name="valor" value="<?=$obImovel->valor?>">                
             </div>
             <div class="mb-1">
                 <label for="formFileMultiple" class="form-label">Fotos do Imóvel</label>
-                <input class="form-control" type="file" id="formFileMultiple" multiple>
-            </div> 
+                <input class="form-control" type="file" id="formFileMultiple" value="<?=$obImovel->imagens?>" multiple>
+            </div><br> 
+        </div><p>
+        <div class="form-row">
+            <div class="container">            
+                    <label>Situação:</label>&nbsp;&nbsp;&nbsp;
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="ativo" value="<?=$obImovel->ativo?>" multiple>
+                            <label class="form-check-label">
+                                Ativo
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="ativo" value="<?=$obImovel->ativo?>">
+                            <label class="form-check-label">
+                                Inativo
+                            </label>
+                        </div><br><p>          
+            </div>
         </div>
         <div class="form-row">
         <div class="form-group col-md-10">
                 <label>Descrição do Imóvel</label>
-                <textarea class="form-control" name="descricao" rows="5"></textarea>
+                <textarea class="form-control" value="<?=$obImovel->descricao?>" name="descricao" rows="5"></textarea>
             </div>
         </div>
         <div class="d-flex justify-content">

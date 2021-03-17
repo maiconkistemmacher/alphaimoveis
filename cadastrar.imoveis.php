@@ -3,13 +3,15 @@
 
 require __DIR__.'/vendor/autoload.php';
 
+define('TITLE', 'Cadastrar novo Imóvel');
+
 use \App\Entity\Imovel;
 
 //DEBUGGER
 // echo "<pre>"; print_r($_POST); echo "</pre>"; exit;
 
 // //VALIDAÇÃO DO POST
-if(isset($_POST['endereco'],$_POST['quartos'],$_POST['banheiros'],$_POST['tamanho'],$_POST['valor'],$_POST['descricao'])){    
+if(isset($_POST['endereco'],$_POST['quartos'],$_POST['banheiros'],$_POST['tamanho'],$_POST['valor'],$_POST['imagens'],$_POST['ativo'],$_POST['descricao'])){    
 
      $obImovel = new Imovel;
      $obImovel->endereco     = $_POST['endereco'];
@@ -17,9 +19,9 @@ if(isset($_POST['endereco'],$_POST['quartos'],$_POST['banheiros'],$_POST['tamanh
      $obImovel->banheiros    = $_POST['banheiros'];
      $obImovel->tamanho      = $_POST['tamanho'];
      $obImovel->valor        = $_POST['valor'];
-     $obImovel->descricao    = $_POST['descricao'];
      $obImovel->imagens      = $_POST['imagens'];
-     $obImovel->ativo        = $_POST['ativo'];     
+     $obImovel->ativo        = $_POST['ativo'];
+     $obImovel->descricao    = $_POST['descricao'];     
     $obImovel->cadastrar();
 
        header('location: dashboard.imoveis.php?status=sucess');

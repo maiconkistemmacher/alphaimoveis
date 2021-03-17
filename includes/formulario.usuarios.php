@@ -20,7 +20,7 @@
                 </div>                                       
         </div>
         <div class="container">            
-                <label>Situação:</label>
+                <label>Situação:</label>&nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="situacao_id" checked>
                         <label class="form-check-label">
@@ -35,7 +35,7 @@
                     </div>           
         </div> 
         <div class="container">
-                <label>Nível de acesso:</label>
+                <label>Nível de acesso:</label>&nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="niveis_acesso_id" checked>
                         <label class="form-check-label">
