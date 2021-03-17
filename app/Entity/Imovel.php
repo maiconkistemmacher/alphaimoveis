@@ -39,7 +39,7 @@ class Imovel{
     public $valor;
 
     /**
-     * Tamanho do imóvel em metros2  
+     * Tamanho do imóvel, m2  
      * @var string
      */
     public $tamanho;
@@ -81,17 +81,43 @@ class Imovel{
 
         $this->id = $obDatabase->insert([
                                             'endereco'  => $this->endereco,
-                                            'banheiros' => $this->banheiros,
                                             'quartos'   => $this->quartos,
-                                            'valor'     => $this->valor,
+                                            'banheiros' => $this->banheiros,
                                             'tamanho'   => $this->tamanho,
-                                            'descricao' => $this->descricao,     
+                                            'valor'     => $this->valor,
                                             'imagens'   => $this->imagens,
-                                            'ativo'     => $this->ativo,                                                                                        
+                                            'ativo'     => $this->ativo,
+                                            'descricao' => $this->descricao,                                                                                                                       
                                             'data'      => $this->data                                            
                                         ]);                                                      
         //RETORNA SUCESSO
         return true;
+        }
+
+    /**
+    * Método responsável por atualizar o imóvel no banco
+    * @return boolean
+    */
+    public function atualizar(){
+        return (new Database('imoveis'))->update('id = '.$this->id,[
+                                            'endereco'  => $this->endereco,
+                                            'quartos'   => $this->quartos,
+                                            'banheiros' => $this->banheiros,
+                                            'tamanho'   => $this->tamanho,
+                                            'valor'     => $this->valor,
+                                            'imagens'   => $this->imagens,
+                                            'ativo'     => $this->ativo,
+                                            'descricao' => $this->descricao,                                                                                                                       
+                                            'data'      => $this->data
+                                        ]);
+        }
+
+    /**
+    * Método responsável por excluir o imóvel do banco
+    * @return boolean
+    */
+    public function excluir(){
+        return (new Database('imoveis'))->delete('id = '.$this->id);
         }
 
     /**
@@ -108,7 +134,7 @@ class Imovel{
 
 
     /**
-     * Método responsável por buscar um imóvel no banco com base em seu ID
+     * Método responsável por buscar um imóvel com base em seu ID
      * @param integer $id
      * @return Imovel
      */
@@ -117,6 +143,4 @@ class Imovel{
                                         ->fetchObject(self::class);
 
     }
-
-
-    }
+}

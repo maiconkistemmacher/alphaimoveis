@@ -151,7 +151,7 @@ class Database{
         }
         
     /**
-     * Método responsável por executar atualizações no banco de dados
+     * Método responsável por executar atualizações no banco
      * @param  string $where
      * @param  array $values [ field => value ]
      * @return boolean
