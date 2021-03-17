@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 17-Mar-2021 às 03:38
+-- Tempo de geração: 17-Mar-2021 às 21:52
 -- Versão do servidor: 10.4.18-MariaDB
 -- versão do PHP: 8.0.3
 
@@ -36,18 +36,16 @@ CREATE TABLE `imoveis` (
   `tamanho` varchar(30) NOT NULL,
   `descricao` text NOT NULL,
   `imagens` blob DEFAULT NULL,
-  `data` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `data` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `ativo` enum('s','n') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `imoveis`
 --
 
-INSERT INTO `imoveis` (`id`, `endereco`, `valor`, `quartos`, `banheiros`, `tamanho`, `descricao`, `imagens`, `data`) VALUES
-(1, 'Residencial Cinco - Alphaville', 'R$3.4000,000', '6', '4', '420 m2', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa tempore repudiandae optio aliquam perspiciatis est quae enim quaerat eos hic dolorem accusamus molestias repellat consequatur velit, officiis nihil magnam placeat!\r\n\r\nNeque facilis iure earum, placeat odit ipsum, amet, optio accusantium voluptatem quasi obcaecati fugit? Explicabo eius dolorem provident quis non voluptas, dignissimos tempora eligendi, in, nam velit, quasi tenetur. Animi!', NULL, '2021-03-17 01:43:18'),
-(2, 'Residencial Nove - Alphaville', 'R$3.8000,000', '6', '3', '510 m2', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa tempore repudiandae optio aliquam perspiciatis est quae enim quaerat eos hic dolorem accusamus molestias repellat consequatur velit, officiis nihil magnam placeat!\r\n\r\nNeque facilis iure earum, placeat odit ipsum, amet, optio accusantium voluptatem quasi obcaecati fugit? Explicabo eius dolorem provident quis non voluptas, dignissimos tempora eligendi, in, nam velit, quasi tenetur. Animi!', NULL, '2021-03-17 02:38:01'),
-(3, 'Residencial Três - Alphaville', 'R$4.5000,000', '7', '4', '510 m2', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa tempore repudiandae optio aliquam perspiciatis est quae enim quaerat eos hic dolorem accusamus molestias repellat consequatur velit, officiis nihil magnam placeat!\r\n\r\nNeque facilis iure earum, placeat odit ipsum, amet, optio accusantium voluptatem quasi obcaecati fugit? Explicabo eius dolorem provident quis non voluptas, dignissimos tempora eligendi, in, nam velit, quasi tenetur. Animi!', NULL, '2021-03-17 02:38:03'),
-(4, 'Residencial Zero - Tamboré', 'R$3.9000,000', '6', '4', '410 m2', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa tempore repudiandae optio aliquam perspiciatis est quae enim quaerat eos hic dolorem accusamus molestias repellat consequatur velit, officiis nihil magnam placeat!\r\n\r\nNeque facilis iure earum, placeat odit ipsum, amet, optio accusantium voluptatem quasi obcaecati fugit? Explicabo eius dolorem provident quis non voluptas, dignissimos tempora eligendi, in, nam velit, quasi tenetur. Animi!', NULL, '2021-03-17 02:38:07');
+INSERT INTO `imoveis` (`id`, `endereco`, `valor`, `quartos`, `banheiros`, `tamanho`, `descricao`, `imagens`, `data`, `ativo`) VALUES
+(1, 'Residencial Cinco - Alphaville', 'R$3.400,000', '6', '4', '420 m2', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa tempore repudiandae optio aliquam perspiciatis est quae enim quaerat eos hic dolorem accusamus molestias repellat consequatur velit, officiis nihil magnam placeat!\r\n\r\nNeque facilis iure earum, placeat odit ipsum, amet, optio accusantium voluptatem quasi obcaecati fugit? Explicabo eius dolorem provident quis non voluptas, dignissimos tempora eligendi, in, nam velit, quasi tenetur. Animi!', NULL, '2021-03-18 00:49:14', 's');
 
 -- --------------------------------------------------------
 
@@ -127,7 +125,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `imoveis`
 --
 ALTER TABLE `imoveis`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT de tabela `niveis_acessos`
