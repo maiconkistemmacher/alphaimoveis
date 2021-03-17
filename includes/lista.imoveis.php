@@ -4,8 +4,7 @@
         $resultados .= '<tr>
                             <td>'.$imovel->id.'</td>
                             <td>'.$imovel->endereco.'</td>                        
-                            <td>'.$imovel->valor.'</td>
-                            <td>'.$imovel->tamanho.'</td>
+                            <td>'.$imovel->valor.'</td>                            
                             <td>'.date('d/m/Y à\s H:i:s',strtotime($imovel->data)).'</td>
                             <td>
                              <a href="editar.imoveis.php?id='.$imovel->id.'"><button type="button" class="badge badge-pill badge-warning">Editar</button></a>
@@ -24,7 +23,6 @@
                     <th>ID</th>
                     <th>Endereço</th>                
                     <th>Valor</th>
-                    <th>Tamanho</th>
                     <th>Data de Cadastro</th>
                     <th>Ações</th>                                                       
                 </tr>

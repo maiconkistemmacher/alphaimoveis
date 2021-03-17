@@ -1,15 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 16-Mar-2021 às 20:02
--- Versão do servidor: 10.4.17-MariaDB
--- versão do PHP: 8.0.2
+-- Tempo de geração: 17-Mar-2021 às 03:38
+-- Versão do servidor: 10.4.18-MariaDB
+-- versão do PHP: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
-SET time_zone = "America/Sao_Paulo";
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -35,9 +35,19 @@ CREATE TABLE `imoveis` (
   `banheiros` enum('2','3','4','5','6') NOT NULL,
   `tamanho` varchar(30) NOT NULL,
   `descricao` text NOT NULL,
-  `imagens` blob,
+  `imagens` blob DEFAULT NULL,
   `data` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `imoveis`
+--
+
+INSERT INTO `imoveis` (`id`, `endereco`, `valor`, `quartos`, `banheiros`, `tamanho`, `descricao`, `imagens`, `data`) VALUES
+(1, 'Residencial Cinco - Alphaville', 'R$3.4000,000', '6', '4', '420 m2', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa tempore repudiandae optio aliquam perspiciatis est quae enim quaerat eos hic dolorem accusamus molestias repellat consequatur velit, officiis nihil magnam placeat!\r\n\r\nNeque facilis iure earum, placeat odit ipsum, amet, optio accusantium voluptatem quasi obcaecati fugit? Explicabo eius dolorem provident quis non voluptas, dignissimos tempora eligendi, in, nam velit, quasi tenetur. Animi!', NULL, '2021-03-17 01:43:18'),
+(2, 'Residencial Nove - Alphaville', 'R$3.8000,000', '6', '3', '510 m2', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa tempore repudiandae optio aliquam perspiciatis est quae enim quaerat eos hic dolorem accusamus molestias repellat consequatur velit, officiis nihil magnam placeat!\r\n\r\nNeque facilis iure earum, placeat odit ipsum, amet, optio accusantium voluptatem quasi obcaecati fugit? Explicabo eius dolorem provident quis non voluptas, dignissimos tempora eligendi, in, nam velit, quasi tenetur. Animi!', NULL, '2021-03-17 02:38:01'),
+(3, 'Residencial Três - Alphaville', 'R$4.5000,000', '7', '4', '510 m2', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa tempore repudiandae optio aliquam perspiciatis est quae enim quaerat eos hic dolorem accusamus molestias repellat consequatur velit, officiis nihil magnam placeat!\r\n\r\nNeque facilis iure earum, placeat odit ipsum, amet, optio accusantium voluptatem quasi obcaecati fugit? Explicabo eius dolorem provident quis non voluptas, dignissimos tempora eligendi, in, nam velit, quasi tenetur. Animi!', NULL, '2021-03-17 02:38:03'),
+(4, 'Residencial Zero - Tamboré', 'R$3.9000,000', '6', '4', '410 m2', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa tempore repudiandae optio aliquam perspiciatis est quae enim quaerat eos hic dolorem accusamus molestias repellat consequatur velit, officiis nihil magnam placeat!\r\n\r\nNeque facilis iure earum, placeat odit ipsum, amet, optio accusantium voluptatem quasi obcaecati fugit? Explicabo eius dolorem provident quis non voluptas, dignissimos tempora eligendi, in, nam velit, quasi tenetur. Animi!', NULL, '2021-03-17 02:38:07');
 
 -- --------------------------------------------------------
 
@@ -117,7 +127,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `imoveis`
 --
 ALTER TABLE `imoveis`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de tabela `niveis_acessos`
