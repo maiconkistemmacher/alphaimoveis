@@ -1,4 +1,4 @@
-<nav class="nav nav-pills nav-fill"><a class="nav-item nav-link active">Usuários Cadastrados</a><br></nav><br>    
+<nav class="nav nav-pills nav-fill"><a class="nav-item nav-link active" style="color:white;">Usuários Cadastrados</a><br></nav><br>    
 
 <div class="row">
     <div class="col-md-12">

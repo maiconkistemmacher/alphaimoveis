@@ -1,4 +1,4 @@
-<nav class="nav nav-pills nav-justified"><a class="nav-item nav-link active">Cadastrar novo Imóvel</a><br></nav><br>
+<nav class="nav nav-pills nav-justified"><a class="nav-item nav-link active" style="color:white;">Cadastrar novo Imóvel</a><br></nav><br>
     
 <div class="d-flex justify-content-end">
     <form method="post">

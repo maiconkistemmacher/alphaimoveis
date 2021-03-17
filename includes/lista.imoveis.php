@@ -13,7 +13,7 @@
     }
 ?>
 
-<nav class="nav nav-pills nav-fill"><a class="nav-item nav-link active">Imóveis Cadastrados</a><br></nav><br>    
+<nav class="nav nav-pills nav-fill"><a class="nav-item nav-link active" style="color:white;">Imóveis Cadastrados</a><br></nav><br>    
           
 <div class="row">               
     <div class="col-md-12">
