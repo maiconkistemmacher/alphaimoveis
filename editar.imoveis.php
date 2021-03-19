@@ -21,7 +21,11 @@ use \App\Entity\Imovel;
     if(!$obImovel instanceof Imovel){
         header('location: dashboard.imoveis.php?status=error');
         exit;
-    }
+    }      
+
+
+
+
 
     // //VALIDAÇÃO DO POST
     if(isset($_POST['endereco'],$_POST['quartos'],$_POST['banheiros'],$_POST['tamanho'],$_POST['valor'],$_POST['ativo'],$_POST['descricao'])){    
