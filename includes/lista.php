@@ -1,3 +1,26 @@
+<?php
+
+$resultados = '';
+foreach($imoveis as $imovel){
+    $resultados .= ' <div class="property horizontal d-flex">
+    <div class="mr-3 img-entry">
+      <a href="imovel.php"><img src="images/property_1-sm.jpg" alt="Image" class="img-fluid"></a>
+    </div>
+                  
+    <div class="prop-details p-3">
+      <div><a href="imovel.php"><strong class="price">'.$imovel->valor.'</strong></a></div>
+      <div class="mb-2 d-flex justify-content-between">
+      <p><span>'.$imovel->quartos.' Quartos</span>,
+        <span>'.$imovel->banheiros.' Banheiros</span>,
+        <span>'.$imovel->tamanho.'</span>
+      </div>
+      <div>'.$imovel->endereco.'</div>
+    </div>
+  </div>';  
+}
+?>
+
+
 <div class="site-section" id="imoveis">
       <div class="container">
         
@@ -43,157 +66,8 @@
               <input type="text" name="text" id="amount" class="form-control border-0 pl-0 bg-white" disabled="" />
             </div>
           </div>
-          <div class="col-md-9 order-2 order-md-1">
-            <div class="property horizontal d-flex">
-              <div class="mr-3 img-entry">
-                <a href="imovel.php"><img src="images/property_1-sm.jpg" alt="Image" class="img-fluid"></a>
-              </div>
-                            
-              <div class="prop-details p-3">
-                <div><a href="imovel.php"><strong class="price">R$3.400,000</strong></a></div>
-                <div class="mb-2 d-flex justify-content-between">
-                <p><span>6 Quartos</span>,
-                  <span>4 Banheiros</span>,
-                  <span>420 m2</span>
-                </div>
-                <div>Residencial Cinco - Alphaville</div>
-              </div>
-            </div>
-
-            <div class="property horizontal d-flex">
-              <div class="mr-3 img-entry">
-                <a href="imovel.php"><img src="images/property_2-sm.jpg" alt="Image" class="img-fluid"></a>
-              </div>
-              <div class="prop-details p-3">
-                <div><a href="imovel.php"><strong class="price">R$3.800,000</strong></a></div>
-                <div class="mb-2 d-flex justify-content-between">
-                <p><span>6 Quartos</span>, 
-                  <span>3 Banheiros</span>,
-                  <span class="w">400 m2</span>
-                </div>
-                <div>Residencial Nove - Alphaville</div>
-              </div>
-            </div>
-
-            <div class="property horizontal d-flex">
-              <div class="mr-3 img-entry">
-                <a href="imovel.php"><img src="images/property_3-sm.jpg" alt="Image" class="img-fluid"></a>
-              </div>
-              <div class="prop-details p-3">
-                <div><a href="imovel.php"><strong class="price">R$4.500,000</strong></a></div>
-                <div class="mb-2 d-flex justify-content-between">
-                <p><span>7 Quartos</span>, 
-                  <span>4 Banheiros</span>,
-                  <span class="w">510 m2</span>
-                </div>
-                <div>Residencial Três - Alphaville</div>
-              </div>
-            </div>
-
-            <div class="property horizontal d-flex">
-              <div class="mr-3 img-entry">
-                <a href="imovel.php"><img src="images/property_4-sm.jpg" alt="Image" class="img-fluid"></a>
-              </div>
-              <div class="prop-details p-3">
-                <div><a href="imovel.php"><strong class="price">R$3.900,000</strong></a></div>
-                <div class="mb-2 d-flex justify-content-between">
-                <p><span>4 Quartos</span>, 
-                  <span>3 Banheiros</span>,
-                  <span class="w">410 m2</span>
-                </div>
-                <div>Residencial Zero - Tamboré</div>
-              </div>
-            </div>
-
-            <div class="property horizontal d-flex">
-              <div class="mr-3 img-entry">
-                <a href="imovel.php"><img src="images/property_5-sm.jpg" alt="Image" class="img-fluid"></a>
-              </div>
-              <div class="prop-details p-3">
-                <div><a href="imovel.php"><strong class="price">R$4.300,000</strong></a></div>
-                <div class="mb-2 d-flex justify-content-between">
-                <p><span>8 Quartos</span>, 
-                  <span>5 Banheiros</span>,
-                  <span class="w">480 m2</span>
-                </div>
-                <div>Residencial Nove - Alphaville</div>
-              </div>
-            </div>
-
-            <div class="property horizontal d-flex">
-              <div class="mr-3 img-entry">
-                <a href="imovel.php"><img src="images/property_1-sm.jpg" alt="Image" class="img-fluid"></a>
-              </div>
-              <div class="prop-details p-3">
-                <div><a href="imovel.php"><strong class="price">R$3.400,000</strong></a></div>
-                <div class="mb-2 d-flex justify-content-between">
-                <p><span>6 Quartos</span>, 
-                  <span>4 Banheiros</span>,
-                  <span class="w">420 m2</span>
-                </div>
-                <div>Residencial Um - Alphaville</div>
-              </div>
-            </div>
-
-            <div class="property horizontal d-flex">
-              <div class="mr-3 img-entry">
-                <a href="imovel.php"><img src="images/property_2-sm.jpg" alt="Image" class="img-fluid"></a>
-              </div>
-              <div class="prop-details p-3">
-                <div><a href="imovel.php"><strong class="price">R$3.700,000</strong></a></div>
-                <div class="mb-2 d-flex justify-content-between">
-                <p><span>7 Quartos</span>, 
-                  <span>5 Banheiros</span>,
-                  <span class="w">460 m2</span>
-                </div>
-                <div>Residencial Dois - Tamboré</div>
-              </div>
-            </div>
-
-            <div class="property horizontal d-flex">
-              <div class="mr-3 img-entry">
-                <a href="imovel.php"><img src="images/property_3-sm.jpg" alt="Image" class="img-fluid"></a>
-              </div>
-              <div class="prop-details p-3">
-                <div><a href="imovel.php"><strong class="price">R$3.900,000</strong></a></div>
-                <div class="mb-2 d-flex justify-content-between">
-                <p><span>5 Quartos</span>, 
-                  <span>3 Banheiros</span>,
-                  <span class="w">450 m2</span>
-                </div>
-                <div>Residencial Doze - Alphaville</div>
-              </div>
-            </div>
-
-            <div class="property horizontal d-flex">
-              <div class="mr-3 img-entry">
-                <a href="imovel.php"><img src="images/property_4-sm.jpg" alt="Image" class="img-fluid"></a>
-              </div>
-              <div class="prop-details p-3">
-                <div><a href="imovel.php"><strong class="price">R$4.800,000</strong></a></div>
-                <div class="mb-2 d-flex justify-content-between">
-                <p><span>8 Quartos</span>, 
-                  <span>5 Banheiros</span>,
-                  <span class="w">520 m2</span>
-                </div>
-                <div>Residencial Dez - Alphaville</div>
-              </div>
-            </div>
-
-            <div class="property horizontal d-flex">
-              <div class="mr-3 img-entry">
-                <a href="imovel.php"><img src="images/property_5-sm.jpg" alt="Image" class="img-fluid"></a>
-              </div>
-              <div class="prop-details p-3">
-                <div><a href="imovel.php"><strong class="price">R$3.900,000</strong></a></div>
-                <div class="mb-2 d-flex justify-content-between">
-                <p><span>5 Quartos</span>, 
-                  <span>3 Banheiros</span>,
-                  <span class="w">430 m2</span>
-                </div>
-                <div>Residencial Dois - Tamboré</div>
-              </div>
-            </div>
+          <div class="col-md-9 order-2 order-md-1"><?=$resultados?>
+            
           </div>
         </div>
         <div class="row mt-4">
