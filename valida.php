@@ -38,4 +38,6 @@
 		$_SESSION['loginErro'] = "Usuário ou senha inválido";
 		header("Location: index.php");
 	}
+
+	
 ?>
